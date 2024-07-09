@@ -1,0 +1,52 @@
+/* Estilos generales */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .MainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .Formulario {
+    width: 100%;
+    max-width: 40%;
+    margin-bottom: 20px;
+  }
+  
+  .Vista {
+    width: 100%;
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .Tarjeta {
+    width: 100%;
+    max-width: calc(100% / 3); /* Para 3 tarjetas por fila en pantalla media */
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .MainContent {
+      flex-direction: row;
+    }
+  
+    .Formulario {
+      max-width: 40%;
+    }
+  
+    .Vista {
+      max-width: 60%;
+    }
+  
+    .Tarjeta {
+      max-width: calc(100% / 4); /* Para 4 tarjetas por fila en pantallas largas */
+    }
+  }
+  

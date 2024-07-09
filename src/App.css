@@ -1,0 +1,134 @@
+/* Reset básico y estilo de cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+/* Contenedor principal de la aplicación */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo para el encabezado */
+header {
+  background-color: #000; /* Fondo negro para el encabezado */
+  color: #ff5555; /* Texto rojo para el encabezado */
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ff5555; /* Borde inferior rojo */
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #000; /* Fondo negro para el pie de página */
+  color: #fff; /* Texto blanco para el pie de página */
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid #ff5555; /* Borde superior rojo */
+}
+
+/* Estilo para la sección principal */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+/* Estilo para el formulario */
+.formulario {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #fff;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para la vista de tarjetas */
+.vista {
+  width: 100%;
+  max-width: 800px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin-bottom: 0.3rem;
+}
+
+.card button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #c82333;
+}
+
